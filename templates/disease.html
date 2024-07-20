@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proper-Croper | Predict Disease</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <h2>Proper-Croper 🌿</h2>
+
+        </div>
+    </nav>
+
+    <!-- Container Class -->
+
+    <div class="container d-flex justify-content-center" style="margin-top: 30px;">
+        <div class="card" style="width: 30rem;">
+            <img src="{{data.image_path}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Disease Detected</h5>
+                <hr>
+                <p class="card-text">
+                <h6>{{data.value}}</h6>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
