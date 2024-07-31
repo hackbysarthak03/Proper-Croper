@@ -33,12 +33,12 @@ def predict():
 
     lst = []
     values = {
-        'temperature' : 22.87,
-        'humidity' : 68,
-        'n_value' : 84,
-        'p_value' : 57,
-        'k_value' : 25,
-        'ph_value' : 6.5,
+        'temperature' : r['feeds'][0]['field4'],
+        'humidity' : r['feeds'][0]['field5'],
+        'n_value' : r['feeds'][0]['field1'],
+        'p_value' : r['feeds'][0]['field2'],
+        'k_value' : r['feeds'][0]['field3'],
+        'ph_value' : r['feeds'][0]['field6'],
         'rainfall' : 64,
         'utc': datetime.strptime('2024-07-17T08:23:35Z', '%Y-%m-%dT%H:%M:%SZ')
     }
@@ -60,12 +60,12 @@ def npk():
 
     lst = []
     values = {
-        'temperature' : 22.87,
-        'humidity' : 68,
-        'n_value' : 84,
-        'p_value' : 57,
-        'k_value' : 25,
-        'ph_value' : 6.5,
+        'temperature' : r['feeds'][0]['field4'],
+        'humidity' : r['feeds'][0]['field5'],
+        'n_value' : r['feeds'][0]['field1'],
+        'p_value' : r['feeds'][0]['field2'],
+        'k_value' : r['feeds'][0]['field3'],
+        'ph_value' : r['feeds'][0]['field6'],
         'rainfall' : 64,
         'utc': datetime.strptime('2024-07-17T08:23:35Z', '%Y-%m-%dT%H:%M:%SZ')
     }
